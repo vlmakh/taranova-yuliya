@@ -5,10 +5,10 @@ import {
   NavMobile,
   NavLink,
 } from "./Header.styled";
-import { BiCertification } from "react-icons/bi";
 import {
   MdMiscellaneousServices,
   MdPriceCheck,
+  MdOutlineVerified,
   MdOutlineContactSupport,
 } from "react-icons/md";
 
@@ -45,7 +45,7 @@ export const Header = () => {
         </li>
         <li>
           <NavLink href="#certificates">
-            <BiCertification size="24" />
+            <MdOutlineVerified size="24" />
           </NavLink>
         </li>
         <li>

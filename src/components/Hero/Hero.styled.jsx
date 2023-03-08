@@ -1,15 +1,6 @@
 import styled from "@emotion/styled";
-import { keyframes } from "@emotion/css";
 import { hero } from "@/images";
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
+import { fadeIn } from "@/utils/keyframes";
 
 export const HeroWrap = styled.div`
   display: flex;
@@ -37,7 +28,7 @@ export const Name = styled.h1`
   color: ${(p) => p.theme.colors.accent};
   text-align: center;
 
-  animation: ${fadeIn} 0.5s ease-in;
+  animation: ${fadeIn} 0.3s ease-in;
 `;
 
 export const Trainer = styled.p`
@@ -46,7 +37,7 @@ export const Trainer = styled.p`
   color: ${(p) => p.theme.colors.accent};
   text-align: center;
 
-  animation: ${fadeIn} 1s ease-in;
+  animation: ${fadeIn} 0.6s ease-in;
 `;
 
 export const Tagline = styled.h2`
@@ -55,5 +46,5 @@ export const Tagline = styled.h2`
   color: #ffffff;
   text-align: center;
 
-  animation: ${fadeIn} 1.5s ease-in;
+  animation: ${fadeIn} 0.9s ease-in;
 `;
