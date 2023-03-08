@@ -9,14 +9,11 @@ export const Certificates = () => {
     <CertWrap id="certificates">
       <CertTitle>Certificates</CertTitle>
 
-      <AnimationOnScroll
-        animateIn="animate__fadeIn"
-        // animateOnce={true}
-      >
-        <Box display="flex" justifyContent="center" mt={5}>
+      <Box display="flex" justifyContent="center" mt={5}>
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
           <Image src={rundark} alt="Run int the dark" width="300" />
-        </Box>
-      </AnimationOnScroll>
+        </AnimationOnScroll>
+      </Box>
     </CertWrap>
   );
 };
