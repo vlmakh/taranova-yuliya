@@ -27,8 +27,9 @@ export const Name = styled.h1`
   font-size: ${(p) => p.theme.fontSizes.xl};
   color: ${(p) => p.theme.colors.accent};
   text-align: center;
+  opacity: 0;
 
-  animation: ${fadeIn} 0.3s ease-in;
+  animation: ${fadeIn} 0.3s ease-in 0.3s forwards;
 `;
 
 export const Trainer = styled.p`
@@ -38,7 +39,7 @@ export const Trainer = styled.p`
   text-align: center;
    opacity: 0;
 
-  animation: ${fadeIn} 0.3s ease-in 0.3s forwards;
+  animation: ${fadeIn} 0.3s ease-in 0.6s forwards;
 `;
 
 export const Tagline = styled.h2`
@@ -48,5 +49,5 @@ export const Tagline = styled.h2`
   text-align: center;
   opacity: 0;
 
-  animation: ${fadeIn} 0.3s ease-in 0.6s forwards;
+  animation: ${fadeIn} 0.3s ease-in 0.9s forwards;
 `;
