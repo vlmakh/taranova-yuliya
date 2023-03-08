@@ -1,4 +1,4 @@
-import { List, Item, ServicesWrap, ServicesTitle } from './Services.styled';
+import { List, Item, ServicesWrap, ServicesTitle } from "./Services.styled";
 
 export const Services = () => {
   return (
