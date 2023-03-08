@@ -11,10 +11,10 @@ export const Services = () => {
           <Item> Gym</Item>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Suspension training</Item>
+          <Item> Suspension</Item>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Kettlebell Training</Item>
+          <Item> Kettlebell</Item>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
           <Item> Stretching</Item>
@@ -26,7 +26,7 @@ export const Services = () => {
           <Item> Outdoor run</Item>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> MSE Training</Item>
+          <Item> MSE</Item>
         </AnimationOnScroll>
       </List>
     </ServicesWrap>
