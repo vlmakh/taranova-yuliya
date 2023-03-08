@@ -36,8 +36,9 @@ export const Trainer = styled.p`
   font-weight: 700;
   color: ${(p) => p.theme.colors.accent};
   text-align: center;
+   opacity: 0;
 
-  animation: ${fadeIn} 0.6s ease-in;
+  animation: ${fadeIn} 0.3s ease-in 0.3s forwards;
 `;
 
 export const Tagline = styled.h2`
@@ -45,6 +46,7 @@ export const Tagline = styled.h2`
   font-weight: 500;
   color: #ffffff;
   text-align: center;
+  opacity: 0;
 
-  animation: ${fadeIn} 0.9s ease-in;
+  animation: ${fadeIn} 0.3s ease-in 0.6s forwards;
 `;

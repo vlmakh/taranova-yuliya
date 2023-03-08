@@ -5,7 +5,7 @@ import {
   ContactsLink,
   JustList,
   JustItem,
-} from './Footer.styled';
+} from "./Footer.styled";
 
 export const Footer = () => {
   return (
@@ -29,7 +29,7 @@ export const Footer = () => {
             Email: ju.taranova@gmail.com
           </ContactsLink>
         </ContactsItem>
-        <ContactsItem>Ballincollig </ContactsItem>
+        <ContactsItem>Ballincollig Gym </ContactsItem>
       </ContactsList>
     </FooterWrap>
   );
