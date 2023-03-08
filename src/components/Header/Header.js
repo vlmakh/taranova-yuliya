@@ -1,4 +1,16 @@
-import { HeaderWrap, HeaderLogo, Nav, NavLink } from "./Header.styled";
+import {
+  HeaderWrap,
+  HeaderLogo,
+  Nav,
+  NavMobile,
+  NavLink,
+} from "./Header.styled";
+import { BiCertification } from "react-icons/bi";
+import {
+  MdMiscellaneousServices,
+  MdPriceCheck,
+  MdOutlineContactSupport,
+} from "react-icons/md";
 
 export const Header = () => {
   return (
@@ -19,6 +31,29 @@ export const Header = () => {
           <NavLink href="#contacts">Contacts</NavLink>
         </li>
       </Nav>
+
+      <NavMobile>
+        <li>
+          <NavLink href="#services">
+            <MdMiscellaneousServices size="24" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink href="#prices">
+            <MdPriceCheck size="24" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink href="#certificates">
+            <BiCertification size="24" />
+          </NavLink>
+        </li>
+        <li>
+          <NavLink href="#contacts">
+            <MdOutlineContactSupport size="24" />
+          </NavLink>
+        </li>
+      </NavMobile>
     </HeaderWrap>
   );
 };
