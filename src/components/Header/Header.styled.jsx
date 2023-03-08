@@ -57,6 +57,24 @@ export const Nav = styled.ul`
   list-style: none;
   gap: ${p => p.theme.space[4]}px;
   margin-left: auto;
+
+  @media (max-width: 479.98px) {
+    display: none;
+  }
+`;
+
+export const NavMobile = styled.ul`
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  list-style: none;
+  gap: ${p => p.theme.space[4]}px;
+  margin-left: auto;
+
+  @media (min-width: 480px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li``;

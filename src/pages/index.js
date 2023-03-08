@@ -8,6 +8,7 @@ import { Certificates } from "@/components/Certificates/Certificates";
 import { Footer } from "@/components/Footer/Footer";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "@/styles/theme";
+import "animate.css/animate.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -24,6 +24,7 @@ export const Item = styled.li`
   justify-content: center;
   text-align: center;
   width: 240px;
+  height: 100%;
   padding: 32px;
   font-size: 24px;
   font-weight: 700;
