@@ -58,7 +58,7 @@ export const Nav = styled.ul`
   gap: ${p => p.theme.space[4]}px;
   margin-left: auto;
 
-  @media (max-width: 479.98px) {
+  @media (max-width: 480px) {
     display: none;
   }
 `;
@@ -72,7 +72,7 @@ export const NavMobile = styled.ul`
   gap: ${p => p.theme.space[4]}px;
   margin-left: auto;
 
-  @media (min-width: 480px) {
+  @media (min-width: 481px) {
     display: none;
   }
 `;
