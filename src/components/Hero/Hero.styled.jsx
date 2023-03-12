@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { hero } from "@/images";
+import { hero, hero480 } from "@/images";
 import { fadeIn } from "@/utils/keyframes";
 
 export const HeroWrap = styled.div`
@@ -15,12 +15,25 @@ export const HeroWrap = styled.div`
   background-color: ${(p) => p.theme.colors.main};
   font-size: 40px;
 
-  background-image: linear-gradient(
+  @media (max-width: 480px) {
+    background-image: linear-gradient(
+      180deg,
+      rgba(18, 20, 29, 0.5),
+      rgba(18, 20, 29, 0.5)
+    ),
+    url(${hero480.src});
+  }
+
+  @media (min-width: 481px) {
+    background-image: linear-gradient(
       180deg,
       rgba(18, 20, 29, 0.5),
       rgba(18, 20, 29, 0.5)
     ),
     url(${hero.src});
+  }
+
+  
 `;
 
 export const Name = styled.h1`
