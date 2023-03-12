@@ -1,4 +1,10 @@
-import { List, Item, ServicesWrap, ServicesTitle } from "./Services.styled";
+import {
+  List,
+  Item,
+  Inner,
+  ServicesWrap,
+  ServicesTitle,
+} from "./Services.styled";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const Services = () => {
@@ -7,27 +13,41 @@ export const Services = () => {
       <ServicesTitle>Services</ServicesTitle>
 
       <List>
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Gym</Item>
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Suspension</Item>
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Kettlebell</Item>
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Stretching</Item>
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Aerobic</Item>
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> Outdoor run</Item>
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-          <Item> MSE</Item>
-        </AnimationOnScroll>
+        <Item>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Inner> Gym</Inner>
+          </AnimationOnScroll>
+        </Item>
+        <Item>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Inner> Suspension</Inner>
+          </AnimationOnScroll>
+        </Item>
+        <Item>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Inner> Kettlebell</Inner>
+          </AnimationOnScroll>
+        </Item>
+        <Item>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Inner> Stretching</Inner>
+          </AnimationOnScroll>
+        </Item>
+        <Item>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Inner> Aerobic</Inner>
+          </AnimationOnScroll>
+        </Item>
+        <Item>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Inner> Outdoor run</Inner>
+          </AnimationOnScroll>
+        </Item>
+        <Item>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Inner> MSE</Inner>
+          </AnimationOnScroll>
+        </Item>
       </List>
     </ServicesWrap>
   );
