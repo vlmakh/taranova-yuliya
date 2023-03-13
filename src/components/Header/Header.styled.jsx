@@ -22,7 +22,7 @@ export const HeaderWrap = styled.header`
 `;
 
 export const HeaderLogo = styled.a`
-display: inline-block;
+  display: inline-block;
   font-family: ${(p) => p.theme.fonts.logo};
   font-size: 44px;
   color: ${(p) => p.theme.colors.main};
