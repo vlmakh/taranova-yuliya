@@ -4,17 +4,17 @@ import {
   ContactsItem,
   ContactsLink,
   JustList,
-  JustItem,
+  JustItem, StyledSpan
 } from "./Footer.styled";
 
 export const Footer = () => {
   return (
     <FooterWrap id="contacts">
       <JustList>
-        <JustItem>Just Try</JustItem>
+        <JustItem><StyledSpan>Just Try</StyledSpan></JustItem>
         <JustItem>To be HEALTHY</JustItem>
         <JustItem>To be FIT</JustItem>
-        <JustItem>Just Try</JustItem>
+        <JustItem><StyledSpan>Just Try</StyledSpan></JustItem>
         <JustItem>TO BE</JustItem>
       </JustList>
 

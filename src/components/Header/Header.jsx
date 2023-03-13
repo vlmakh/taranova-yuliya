@@ -16,7 +16,7 @@ import {
 export const Header = () => {
   return (
     <HeaderWrap>
-      <HeaderLogo href="#">Ju</HeaderLogo>
+      <HeaderLogo href="#">YTaranova</HeaderLogo>
 
       <Nav>
         <NavItem>

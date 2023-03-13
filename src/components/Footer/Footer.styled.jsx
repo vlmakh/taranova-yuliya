@@ -1,12 +1,12 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const FooterWrap = styled.footer`
   padding: 64px 0;
   font-weight: 700;
-  color: ${p => p.theme.colors.secondary};
+  color: ${(p) => p.theme.colors.secondary};
   width: 100%;
   border-top: 1px solid lightgrey;
-  background-color: ${p => p.theme.colors.main};
+  background-color: ${(p) => p.theme.colors.main};
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -49,5 +49,10 @@ export const ContactsLink = styled.a`
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${p => p.theme.colors.secondary};
+  color: ${(p) => p.theme.colors.secondary};
+`;
+
+export const StyledSpan = styled.span`
+  font-family: ${(p) => p.theme.fonts.logo};
+  font-size: 28px;
 `;

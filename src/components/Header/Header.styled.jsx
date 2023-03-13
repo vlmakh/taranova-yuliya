@@ -22,9 +22,10 @@ export const HeaderWrap = styled.header`
 `;
 
 export const HeaderLogo = styled.a`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-family: ${(p) => p.theme.fonts.logo};
-  font-size: 44px;
+  font-size: ${(p) => p.theme.fontSizes.l};
   color: ${(p) => p.theme.colors.main};
   text-decoration: none;
   cursor: pointer;
