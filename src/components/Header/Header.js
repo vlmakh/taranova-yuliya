@@ -4,6 +4,7 @@ import {
   Nav,
   NavMobile,
   NavLink,
+  NavItem,
 } from "./Header.styled";
 import {
   MdMiscellaneousServices,
@@ -15,44 +16,44 @@ import {
 export const Header = () => {
   return (
     <HeaderWrap>
-      <HeaderLogo href="#">YT</HeaderLogo>
+      <HeaderLogo href="#">Ju</HeaderLogo>
 
       <Nav>
-        <li>
+        <NavItem>
           <NavLink href="#services">Services</NavLink>
-        </li>
-        <li>
+        </NavItem>
+        <NavItem>
           <NavLink href="#prices">Prices</NavLink>
-        </li>
-        <li>
+        </NavItem>
+        <NavItem>
           <NavLink href="#certificates">Certificates</NavLink>
-        </li>
-        <li>
+        </NavItem>
+        <NavItem>
           <NavLink href="#contacts">Contacts</NavLink>
-        </li>
+        </NavItem>
       </Nav>
 
       <NavMobile>
-        <li>
+        <NavItem>
           <NavLink href="#services">
             <MdMiscellaneousServices size="24" />
           </NavLink>
-        </li>
-        <li>
+        </NavItem>
+        <NavItem>
           <NavLink href="#prices">
             <MdPriceCheck size="24" />
           </NavLink>
-        </li>
-        <li>
+        </NavItem>
+        <NavItem>
           <NavLink href="#certificates">
             <MdOutlineVerified size="24" />
           </NavLink>
-        </li>
-        <li>
+        </NavItem>
+        <NavItem>
           <NavLink href="#contacts">
             <MdOutlineContactSupport size="24" />
           </NavLink>
-        </li>
+        </NavItem>
       </NavMobile>
     </HeaderWrap>
   );
