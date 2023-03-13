@@ -16,6 +16,7 @@ export const HeroWrap = styled.div`
   font-size: 40px;
 
   @media (max-width: 480px) {
+    padding: 0 8px;
     background-image: linear-gradient(
         180deg,
         rgba(18, 20, 29, 0.5),
