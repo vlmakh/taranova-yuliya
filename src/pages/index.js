@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { Header } from "@/components/Header/Header";
 import { Hero } from "@/components/Hero/Hero";
 import { Services } from "@/components/Services/Services";
@@ -10,7 +10,7 @@ import { ThemeProvider } from "@emotion/react";
 import { theme } from "@/styles/theme";
 import "animate.css/animate.min.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
