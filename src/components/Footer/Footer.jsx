@@ -27,7 +27,7 @@ export const Footer = () => {
 
       <ContactsList>
         <CItem>
-          <CLink href="tel:+353892337815">
+          <CLink href="https://wa.me/353892337815">
             <MdOutlineWhatsapp size="24" /> +353 89 233 7815
           </CLink>
         </CItem>
