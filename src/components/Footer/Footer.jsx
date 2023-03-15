@@ -1,35 +1,46 @@
 import {
   FooterWrap,
   ContactsList,
-  ContactsItem,
-  ContactsLink,
+  CItem,
+  CLink,
   JustList,
-  JustItem, StyledSpan
+  JItem,
+  JStyled,
 } from "./Footer.styled";
+import { MdOutlineMarkEmailRead, MdOutlineWhatsapp } from "react-icons/md";
+import { BiMap } from "react-icons/bi";
 
 export const Footer = () => {
   return (
     <FooterWrap id="contacts">
       <JustList>
-        <JustItem><StyledSpan>Just Try</StyledSpan></JustItem>
-        <JustItem>To be HEALTHY</JustItem>
-        <JustItem>To be FIT</JustItem>
-        <JustItem><StyledSpan>Just Try</StyledSpan></JustItem>
-        <JustItem>TO BE</JustItem>
+        <JItem>
+          <JStyled>Just Try</JStyled>
+        </JItem>
+        <JItem>To be HEALTHY</JItem>
+        <JItem>To be FIT</JItem>
+        <JItem>
+          <JStyled>Just Try</JStyled>
+        </JItem>
+        <JItem>TO BE</JItem>
       </JustList>
 
       <ContactsList>
-        <ContactsItem>
-          <ContactsLink href="tel:+353892337815">
-            Phone: +353 89 233 7815
-          </ContactsLink>
-        </ContactsItem>
-        <ContactsItem>
-          <ContactsLink href="mailto:ju.taranova@gmail.com">
-            Email: ju.taranova@gmail.com
-          </ContactsLink>
-        </ContactsItem>
-        <ContactsItem>Ballincollig Gym </ContactsItem>
+        <CItem>
+          <CLink href="tel:+353892337815">
+            <MdOutlineWhatsapp size="24" /> +353 89 233 7815
+          </CLink>
+        </CItem>
+        <CItem>
+          <CLink href="mailto:ju.taranova@gmail.com">
+            <MdOutlineMarkEmailRead size="24" /> ju.taranova@gmail.com
+          </CLink>
+        </CItem>
+        <CItem>
+          <CLink href="https://goo.gl/maps/M89tJoxzzhwB8zZE9" target="_blank">
+            <BiMap size="24" /> Ballincollig Gym
+          </CLink>
+        </CItem>
       </ContactsList>
     </FooterWrap>
   );

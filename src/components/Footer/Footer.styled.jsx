@@ -19,11 +19,16 @@ export const JustList = styled.ul`
   max-width: 480px;
 `;
 
-export const JustItem = styled.li`
+export const JItem = styled.li`
   padding: 4px;
   font-size: 24px;
   font-weight: 400;
   color: white;
+`;
+
+export const JStyled = styled.span`
+  font-family: ${(p) => p.theme.fonts.logo};
+  font-size: 28px;
 `;
 
 export const ContactsList = styled.ul`
@@ -36,23 +41,24 @@ export const ContactsList = styled.ul`
   }
 `;
 
-export const ContactsItem = styled.li`
-  padding: 8px;
+export const CItem = styled.li`
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 `;
 
-export const ContactsLink = styled.a`
-  padding: 0;
+export const CLink = styled.a`
+  display: block;
+  padding: 8px;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   color: ${(p) => p.theme.colors.secondary};
-`;
 
-export const StyledSpan = styled.span`
-  font-family: ${(p) => p.theme.fonts.logo};
-  font-size: 28px;
+  transition: color 300ms ease-in;
+
+  :hover {
+    color: white;
+  }
 `;

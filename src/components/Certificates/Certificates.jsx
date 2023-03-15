@@ -2,7 +2,6 @@ import { rundark, ntc } from "@/images";
 import { CertWrap, CertTitle, CertList, CertItem } from "./Certificates.styled";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { width } from "styled-system";
 
 export const Certificates = () => {
   return (
