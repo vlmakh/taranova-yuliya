@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 export const FooterWrap = styled.footer`
   padding: 64px 0;

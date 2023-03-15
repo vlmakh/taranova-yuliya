@@ -1,4 +1,4 @@
-import { keyframes } from "@emotion/css";
+import { keyframes } from "styled-components";
 
 export const fadeIn = keyframes`
   from {
