@@ -1,0 +1,41 @@
+{
+  "header": {
+    "services": "Services",
+    "prices": "Prices",
+    "cert": "Certificates",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "name": "Yuliya TARANOVA",
+    "trainer": "your personal trainer",
+    "tagline": "You can do more than you think"
+  },
+  "services": {
+    "title": "Services",
+    "gym": "Gym",
+    "suspension": "Suspension",
+    "kettlebell": "Kettlebell",
+    "stretching": "Stretching",
+    "aerobic": "Aerobic",
+    "run": "Outdoor run",
+    "mse": "MSE"
+  },
+  "prices": {
+    "title": "Prices",
+    "30min": "30min PR session - 30euro",
+    "60min": "60min PR session - 50euro",
+    "small": "Small group classes - 10euro (5-6 people)",
+    "group": "Group classes - 7euro (12-16 people)",
+    "free": "FIRST TRIAL SESSION FREE"
+  },
+  "cert": {
+    "title": "Certificates"
+  },
+  "footer": {
+    "just1": "Just Try",
+    "just2": "To be HEALTHY",
+    "just3": "To be FIT",
+    "just4": "TO BE",
+    "addr": "Ballincollig Gym"
+  }
+}

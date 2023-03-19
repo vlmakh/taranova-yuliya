@@ -8,6 +8,7 @@ export const theme = {
   fonts: {
     body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     logo: '"Yellowtail", cursive',
+    logo2: '"Caveat", cursive',
   },
   fontSizes: {
     xs: "16px",

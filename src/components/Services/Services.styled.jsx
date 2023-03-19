@@ -6,6 +6,7 @@ export const ServicesWrap = styled(Section)`
 `;
 
 export const ServicesTitle = styled(Title)`
+  font-family: ${(p) => p.lang === "uk" ? p.theme.fonts.logo2 : p.theme.fonts.logo};
   color: ${(p) => p.theme.colors.main};
 `;
 

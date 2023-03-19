@@ -1,19 +1,22 @@
 import { PricesWrap, PricesTitle, List, Item } from "./Prices.styled";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { useTranslation } from "next-i18next";
 
-export const Prices = () => {
+export const Prices = ({lang}) => {
+const { t } = useTranslation("common");
+
   return (
     <PricesWrap id="prices">
-      <PricesTitle>Prices</PricesTitle>
+      <PricesTitle lang={lang}>{t('prices.title')}</PricesTitle>
       <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
         <List>
-          <Item>30min PR session - 30euro</Item>
-          <Item>60min PR session - 50euro</Item>
-          <Item>Small group classes - 10euro (5-6 people)</Item>
-          <Item>Group classes - 7euro (12-16 people)</Item>
+          <Item>{t('prices.30min')}</Item>
+          <Item>{t('prices.60min')}</Item>
+          <Item>{t('prices.small')}</Item>
+          <Item>{t('prices.group')}</Item>
         </List>
       </AnimationOnScroll>
-      <h2>FIRST TRIAL SESSION FREE</h2>
+      <h2>{t('prices.free')}</h2>
     </PricesWrap>
   );
 };

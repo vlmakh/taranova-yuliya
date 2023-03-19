@@ -27,7 +27,7 @@ export const JItem = styled.li`
 `;
 
 export const JStyled = styled.span`
-  font-family: ${(p) => p.theme.fonts.logo};
+  font-family: ${(p) => p.lang === "uk" ? p.theme.fonts.logo2 : p.theme.fonts.logo};
   font-size: 28px;
 `;
 

@@ -6,46 +6,49 @@ import {
   ServicesTitle,
 } from "./Services.styled";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { useTranslation } from "next-i18next";
 
-export const Services = () => {
+export const Services = ({lang}) => {
+  const { t } = useTranslation("common");
+
   return (
     <ServicesWrap id="services">
-      <ServicesTitle>Services</ServicesTitle>
+      <ServicesTitle lang={lang}>{t('services.title')}</ServicesTitle>
 
       <List>
         <Item>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Inner> Gym</Inner>
+            <Inner>{t('services.gym')}</Inner>
           </AnimationOnScroll>
         </Item>
         <Item>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Inner> Suspension</Inner>
+            <Inner>{t('services.suspension')}</Inner>
           </AnimationOnScroll>
         </Item>
         <Item>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Inner> Kettlebell</Inner>
+            <Inner> {t('services.kettlebell')}</Inner>
           </AnimationOnScroll>
         </Item>
         <Item>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Inner> Stretching</Inner>
+            <Inner> {t('services.stretching')}</Inner>
           </AnimationOnScroll>
         </Item>
         <Item>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Inner> Aerobic</Inner>
+            <Inner> {t('services.aerobic')}</Inner>
           </AnimationOnScroll>
         </Item>
         <Item>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Inner> Outdoor run</Inner>
+            <Inner> {t('services.run')}</Inner>
           </AnimationOnScroll>
         </Item>
         <Item>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Inner> MSE</Inner>
+            <Inner> {t('services.mse')}</Inner>
           </AnimationOnScroll>
         </Item>
       </List>

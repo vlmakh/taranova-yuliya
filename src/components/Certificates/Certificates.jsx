@@ -2,11 +2,14 @@ import { rundark, ntc } from "@/images";
 import { CertWrap, CertTitle, CertList, CertItem } from "./Certificates.styled";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { useTranslation } from "next-i18next";
 
-export const Certificates = () => {
+export const Certificates = ({lang}) => {
+  const { t } = useTranslation("common");
+
   return (
     <CertWrap id="certificates">
-      <CertTitle>Certificates</CertTitle>
+      <CertTitle lang={lang}>{t('cert.title')}</CertTitle>
 
       <CertList>
         <CertItem>

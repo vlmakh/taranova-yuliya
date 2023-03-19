@@ -9,20 +9,23 @@ import {
 } from "./Footer.styled";
 import { MdOutlineMarkEmailRead, MdOutlineWhatsapp } from "react-icons/md";
 import { BiMap } from "react-icons/bi";
+import { useTranslation } from "next-i18next";
 
-export const Footer = () => {
+export const Footer = ({lang}) => {
+  const { t } = useTranslation("common");
+
   return (
     <FooterWrap id="contacts">
       <JustList>
         <JItem>
-          <JStyled>Just Try</JStyled>
+          <JStyled lang={lang}>{t('footer.just1')}</JStyled>
         </JItem>
-        <JItem>To be HEALTHY</JItem>
-        <JItem>To be FIT</JItem>
+        <JItem>{t('footer.just2')}</JItem>
+        <JItem>{t('footer.just3')}</JItem>
         <JItem>
-          <JStyled>Just Try</JStyled>
+          <JStyled lang={lang}>{t('footer.just1')}</JStyled>
         </JItem>
-        <JItem>TO BE</JItem>
+        <JItem>{t('footer.just4')}</JItem>
       </JustList>
 
       <ContactsList>
@@ -38,7 +41,7 @@ export const Footer = () => {
         </CItem>
         <CItem>
           <CLink href="https://goo.gl/maps/M89tJoxzzhwB8zZE9" target="_blank">
-            <BiMap size="24" /> Ballincollig Gym
+            <BiMap size="24" /> {t('footer.addr')}
           </CLink>
         </CItem>
       </ContactsList>
