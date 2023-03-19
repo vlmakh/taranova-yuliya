@@ -8,8 +8,19 @@ import { Footer } from "@/components/Footer/Footer";
 import { ThemeProvider } from "styled-components";
 import { theme } from "@/styles/theme";
 import "animate.css/animate.min.css";
+import { useRouter } from "next/router";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
+  const router = useRouter();
+
+  const onToggleLanguageClick = (newLocale) => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, { locale: newLocale });
+  };
+
+  const changeTo = router.locale === "en" ? "ua" : "en";
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
@@ -19,17 +30,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header
+        onToggleLanguageClick={onToggleLanguageClick}
+        changeTo={changeTo}
+      />
 
-      <Hero />
+      <Hero lang={router.locale} />
 
-      <Services />
+      <Services lang={router.locale} />
 
-      <Prices />
+      <Prices lang={router.locale} />
 
-      <Certificates />
+      <Certificates lang={router.locale} />
 
-      <Footer />
+      <Footer lang={router.locale} />
     </ThemeProvider>
   );
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? "en", ["common"])),
+  },
+});

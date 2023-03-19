@@ -6,6 +6,9 @@ export const CertWrap = styled(Section)`
 `;
 
 export const CertTitle = styled(Title)`
+  font-family: ${(p) =>
+    p.lang === "ua" ? p.theme.fonts.logoUa : p.theme.fonts.logo};
+  font-style: ${(p) => (p.lang === "ua" ? "italic" : null)};
   color: ${(p) => p.theme.colors.main};
 `;
 
@@ -23,7 +26,6 @@ export const CertList = styled.ul`
 `;
 
 export const CertItem = styled.li`
-
   @media (max-width: 480px) {
     max-width: 420px;
   }

@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import i18nextConfig from "../../next-i18next.config";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -29,8 +30,11 @@ export default class MyDocument extends Document {
   }
 
   render() {
+    const currentLocale =
+      this.props.__NEXT_DATA__.locale ?? i18nextConfig.i18n.defaultLocale;
+
     return (
-      <Html lang="en">
+      <Html lang={currentLocale}>
         <Head />
         <body>
           <Main />

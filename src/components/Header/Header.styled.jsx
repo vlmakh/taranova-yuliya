@@ -82,3 +82,10 @@ export const NavLink = styled.a`
     text-shadow: ${(p) => p.theme.shadows.link};
   }
 `;
+
+export const LangBtn = styled.button`
+  background-color: transparent;
+  border: none;
+  color: ${(p) => p.theme.colors.main};
+  cursor: pointer;
+`;

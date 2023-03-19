@@ -64,8 +64,9 @@ export const Trainer = styled.p`
 
 export const Tagline = styled.h2`
   font-size: ${(p) => p.theme.fontSizes.xl};
-  font-weight: 500;
-  font-family: ${(p) => p.theme.fonts.logo};
+  font-weight: 500;  
+  font-style: ${(p) => p.lang === "ua" ? 'italic' : null};
+  font-family: ${(p) => p.lang === "ua" ? p.theme.fonts.logoUa : p.theme.fonts.logo};
   color: #ffffff;
   text-align: center;
   opacity: 0;

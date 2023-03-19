@@ -4,32 +4,36 @@ import {
   Nav,
   NavMobile,
   NavLink,
-  NavItem,
+  NavItem, LangBtn
 } from "./Header.styled";
 import {
   MdMiscellaneousServices,
   MdPriceCheck,
   MdOutlineVerified,
-  MdOutlineContactSupport,
+  MdOutlineContactSupport, MdLanguage
 } from "react-icons/md";
+import { useTranslation } from "next-i18next";
 
-export const Header = () => {
+
+export const Header = ({onToggleLanguageClick, changeTo}) => {
+  const { t } = useTranslation("common");
+
   return (
     <HeaderWrap>
       <HeaderLogo href="#">YTaranova</HeaderLogo>
 
       <Nav>
         <NavItem>
-          <NavLink href="#services">Services</NavLink>
+          <NavLink href="#services">{t('header.services')}</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#prices">Prices</NavLink>
+          <NavLink href="#prices">{t('header.prices')}</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#certificates">Certificates</NavLink>
+          <NavLink href="#certificates">{t('header.cert')}</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#contacts">Contacts</NavLink>
+          <NavLink href="#contacts">{t('header.contacts')}</NavLink>
         </NavItem>
       </Nav>
 
@@ -55,6 +59,8 @@ export const Header = () => {
           </NavLink>
         </NavItem>
       </NavMobile>
+
+      <LangBtn onClick={() => onToggleLanguageClick(changeTo)}><MdLanguage size="24" /></LangBtn>
     </HeaderWrap>
   );
 };

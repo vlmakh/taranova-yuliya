@@ -6,7 +6,11 @@ export const PricesWrap = styled(Section)`
   color: white;
 `;
 
-export const PricesTitle = styled(Title)``;
+export const PricesTitle = styled(Title)`
+  font-family: ${(p) =>
+    p.lang === "ua" ? p.theme.fonts.logoUa : p.theme.fonts.logo};
+  font-style: ${(p) => (p.lang === "ua" ? "italic" : null)};
+`;
 
 export const List = styled.ul`
   margin: 32px auto;

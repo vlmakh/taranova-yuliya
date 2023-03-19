@@ -6,7 +6,6 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h2`
-font-family: ${(p) => p.theme.fonts.logo};
   text-align: center;
   font-size: 44px;
   font-weight: 700;
