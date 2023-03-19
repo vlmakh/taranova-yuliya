@@ -19,7 +19,7 @@ export default function Home() {
     router.push({ pathname, query }, asPath, { locale: newLocale });
   };
 
-  const changeTo = router.locale === "en" ? "uk" : "en";
+  const changeTo = router.locale === "en" ? "ua" : "en";
 
   return (
     <ThemeProvider theme={theme}>

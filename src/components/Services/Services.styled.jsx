@@ -6,8 +6,8 @@ export const ServicesWrap = styled(Section)`
 `;
 
 export const ServicesTitle = styled(Title)`
-  font-family: ${(p) => p.lang === "uk" ? p.theme.fonts.logoUk : p.theme.fonts.logo};
-  font-style: ${(p) => p.lang === "uk" ? 'italic' : null};
+  font-family: ${(p) => p.lang === "ua" ? p.theme.fonts.logoUa : p.theme.fonts.logo};
+  font-style: ${(p) => p.lang === "ua" ? 'italic' : null};
   color: ${(p) => p.theme.colors.main};
 `;
 
