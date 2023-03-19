@@ -8,7 +8,8 @@ export const PricesWrap = styled(Section)`
 
 export const PricesTitle = styled(Title)`
   font-family: ${(p) =>
-    p.lang === "uk" ? p.theme.fonts.logo2 : p.theme.fonts.logo};
+    p.lang === "uk" ? p.theme.fonts.logoUk : p.theme.fonts.logo};
+  font-style: ${(p) => (p.lang === "uk" ? "italic" : null)};
 `;
 
 export const List = styled.ul`

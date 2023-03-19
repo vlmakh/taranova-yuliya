@@ -14,7 +14,7 @@ export const Certificates = ({lang}) => {
       <CertList>
         <CertItem>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Image src={ntc} alt="NTC" width="420" />
+            <Image src={ntc} alt="NTC" width="400" />
           </AnimationOnScroll>
         </CertItem>
         <CertItem>

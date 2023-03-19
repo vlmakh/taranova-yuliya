@@ -6,7 +6,8 @@ export const ServicesWrap = styled(Section)`
 `;
 
 export const ServicesTitle = styled(Title)`
-  font-family: ${(p) => p.lang === "uk" ? p.theme.fonts.logo2 : p.theme.fonts.logo};
+  font-family: ${(p) => p.lang === "uk" ? p.theme.fonts.logoUk : p.theme.fonts.logo};
+  font-style: ${(p) => p.lang === "uk" ? 'italic' : null};
   color: ${(p) => p.theme.colors.main};
 `;
 
@@ -20,7 +21,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  width: 240px;
+  width: 240px;  
 `;
 
 export const Inner = styled.div`
@@ -28,6 +29,7 @@ export const Inner = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 132px;
   padding: 32px;
   font-size: 24px;
   font-weight: 700;
