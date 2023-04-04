@@ -1,4 +1,4 @@
-import { rundark, ntc } from "@/images";
+import { rundark, ntc, kettle } from "@/images";
 import { CertWrap, CertTitle, CertList, CertItem } from "./Certificates.styled";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -15,6 +15,11 @@ export const Certificates = ({lang}) => {
         <CertItem>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
             <Image src={ntc} alt="NTC" width="400" />
+          </AnimationOnScroll>
+        </CertItem>
+        <CertItem>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Image src={kettle} alt="Kettlebell" width="400" />
           </AnimationOnScroll>
         </CertItem>
         <CertItem>

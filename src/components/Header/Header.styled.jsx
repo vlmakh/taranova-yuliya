@@ -30,7 +30,7 @@ export const HeaderLogo = styled.a`
   text-decoration: none;
   cursor: pointer;
 
-  transition: text-shadow 300ms ease-in;
+  transition: text-shadow 250ms ease-in;
 
   :hover {
     text-shadow: ${(p) => p.theme.shadows.link};
@@ -76,7 +76,7 @@ export const NavLink = styled.a`
   font-weight: 700;
   cursor: pointer;
 
-  transition: text-shadow 300ms ease-in;
+  transition: text-shadow 250ms ease-in;
 
   :hover {
     text-shadow: ${(p) => p.theme.shadows.link};
@@ -88,4 +88,10 @@ export const LangBtn = styled.button`
   border: none;
   color: ${(p) => p.theme.colors.main};
   cursor: pointer;
+
+  transition: text-shadow 250ms ease-in;
+
+  :hover {
+    text-shadow: ${(p) => p.theme.shadows.link};
+  }
 `;
