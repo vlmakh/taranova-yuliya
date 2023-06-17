@@ -1,4 +1,4 @@
-import { rundark, ntc, kettle, cycling } from "@/images";
+import { ntc, kettle, cycling, firstaid } from "@/images";
 import { CertWrap, CertTitle, CertList, CertItem } from "./Certificates.styled";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -19,17 +19,17 @@ export const Certificates = ({lang}) => {
         </CertItem>
         <CertItem>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Image src={kettle} alt="Kettlebell" width="400" />
+            <Image src={kettle} alt="Kettlebell Training" width="400" />
           </AnimationOnScroll>
         </CertItem>
         <CertItem>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Image src={cycling} alt="Kettlebell" width="400" />
+            <Image src={cycling} alt="Indoor Cycling" width="400" />
           </AnimationOnScroll>
         </CertItem>
         <CertItem>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-            <Image src={rundark} alt="Run in the dark" width="300" />
+            <Image src={firstaid} alt="First Aid" width="300" />
           </AnimationOnScroll>
         </CertItem>
       </CertList>

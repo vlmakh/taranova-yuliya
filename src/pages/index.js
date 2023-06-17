@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero/Hero";
 import { Services } from "@/components/Services/Services";
 import { Prices } from "@/components/Prices/Prices";
 import { Certificates } from "@/components/Certificates/Certificates";
+import { Achievments } from "@/components/Achievments/Achievments";
 import { Footer } from "@/components/Footer/Footer";
 import { ThemeProvider } from "styled-components";
 import { theme } from "@/styles/theme";
@@ -42,6 +43,8 @@ export default function Home() {
       <Prices lang={router.locale} />
 
       <Certificates lang={router.locale} />
+
+      <Achievments lang={router.locale} />
 
       <Footer lang={router.locale} />
     </ThemeProvider>
