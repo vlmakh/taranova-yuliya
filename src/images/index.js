@@ -6,3 +6,4 @@ export { default as kettle } from "./cert-kettle.webp";
 export { default as cycling } from "./cert-cycling.webp";
 export { default as firstaid } from "./cert-firstaid.webp";
 export { default as marathon23jun } from "./cert-marathon-23-jun.webp";
+export { default as jailbreak23 } from "./cert-jailbreak-2023.webp";

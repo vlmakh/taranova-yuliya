@@ -1,4 +1,4 @@
-import { rundark, marathon23jun } from "@/images";
+import { rundark, marathon23jun, jailbreak23 } from "@/images";
 import { AchWrap } from "./Achievments.styled";
 import { CertTitle, CertList, CertItem } from "@/components/Certificates/Certificates.styled";
 import Image from "next/image";
@@ -18,12 +18,20 @@ export const Achievments = ({lang}) => {
             <Image src={rundark} alt="Run in the dark" width="300" />
           </AnimationOnScroll>
         </CertItem>
+
          <CertItem>
           <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
             <Image src={marathon23jun} alt="Run in the dark" width="400" />
           </AnimationOnScroll>
-        </CertItem>        
+        </CertItem>    
+        
+         <CertItem>
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+            <Image src={jailbreak23} alt="Jailbreak 2023" width="300" />
+          </AnimationOnScroll>
+        </CertItem>  
       </CertList>
+      
     </AchWrap>
   );
 };
