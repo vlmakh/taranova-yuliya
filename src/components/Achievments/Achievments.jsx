@@ -1,4 +1,3 @@
-import { rundark, marathon23jun, jailbreak23 } from "@/images";
 import { AchWrap } from "./Achievments.styled";
 import {
   CertTitle,
@@ -10,6 +9,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTranslation } from "next-i18next";
 import Modal from "@/components/Modal/Modal";
 import { useState } from "react";
+import { achievements } from "@/images";
 
 export const Achievments = ({ lang }) => {
   const { t } = useTranslation("common");
@@ -24,12 +24,6 @@ export const Achievments = ({ lang }) => {
     setBigPhotoIdx(idx);
     toggleModal();
   };
-
-  const achievements = [
-    { path: rundark, alt: "Run in the dark", width: 300 },
-    { path: marathon23jun, alt: "Marathon 2023", width: 400 },
-    { path: jailbreak23, alt: "Jailbreak 2023", width: 300 },
-  ];
 
   return (
     <>
