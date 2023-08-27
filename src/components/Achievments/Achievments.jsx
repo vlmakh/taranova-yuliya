@@ -10,6 +10,7 @@ import { useTranslation } from "next-i18next";
 import Modal from "@/components/Modal/Modal";
 import { useState } from "react";
 import { achievements } from "@/images";
+import { Box } from "@/components/Box/Box";
 
 export const Achievments = ({ lang }) => {
   const { t } = useTranslation("common");
@@ -48,13 +49,13 @@ export const Achievments = ({ lang }) => {
 
       {showModal && (
         <Modal onClose={toggleModal}>
-          <Image
-            src={achievements[bigPhotoIdx].path}
-            alt={achievements[bigPhotoIdx].alt}
-            // width={500}
-            // height="100%"
-            sizes="(max-width: 500px) 100vw"
-          />
+          <Box display="flex">
+            <Image
+              src={achievements[bigPhotoIdx].path}
+              alt={achievements[bigPhotoIdx].alt}
+              // sizes="(max-width: 500px) 100vw"
+            />
+          </Box>
         </Modal>
       )}
     </>

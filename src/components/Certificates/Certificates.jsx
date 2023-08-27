@@ -5,6 +5,7 @@ import { useTranslation } from "next-i18next";
 import Modal from "@/components/Modal/Modal";
 import { useState } from "react";
 import { certs } from "@/images";
+import { Box } from "@/components/Box/Box";
 
 export const Certificates = ({ lang }) => {
   const { t } = useTranslation("common");
@@ -43,11 +44,14 @@ export const Certificates = ({ lang }) => {
 
       {showModal && (
         <Modal onClose={toggleModal}>
-          <Image
-            src={certs[bigPhotoIdx].path}
-            alt={certs[bigPhotoIdx].alt}
-            sizes="(max-width: 500px) 100vw"
-          />
+          <Box display="flex">
+            {" "}
+            <Image
+              src={certs[bigPhotoIdx].path}
+              alt={certs[bigPhotoIdx].alt}
+              // sizes="(max-width: 500px) 100vw"
+            />
+          </Box>
         </Modal>
       )}
     </>

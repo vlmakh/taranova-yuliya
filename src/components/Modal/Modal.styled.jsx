@@ -14,16 +14,11 @@ export const Overlay = styled.div`
 `;
 
 export const ModalWindow = styled.div`
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* width: 100%; */
   max-height: calc(100vh - 24px);
   overflow-y: clip;
   overflow-x: clip;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media (min-width: 769px) {
+    overflow-x: visible;
+  }
 `;
