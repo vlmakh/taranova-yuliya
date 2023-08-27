@@ -2,7 +2,7 @@ import { AchWrap } from "./Achievments.styled";
 import {
   CertTitle,
   CertList,
-  CertItem,
+  CertItem, ImgStyled
 } from "@/components/Certificates/Certificates.styled";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
@@ -11,6 +11,9 @@ import Modal from "@/components/Modal/Modal";
 import { useState } from "react";
 import { achievements } from "@/images";
 import { Box } from "@/components/Box/Box";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export const Achievments = ({ lang }) => {
   const { t } = useTranslation("common");
@@ -25,6 +28,18 @@ export const Achievments = ({ lang }) => {
     setBigPhotoIdx(idx);
     toggleModal();
   };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: bigPhotoIdx,
+    // lazyLoad: 'ondemand',
+    draggable: true,
+  };
+
 
   return (
     <>
@@ -49,13 +64,13 @@ export const Achievments = ({ lang }) => {
 
       {showModal && (
         <Modal onClose={toggleModal}>
-          <Box display="flex">
-            <Image
-              src={achievements[bigPhotoIdx].path}
-              alt={achievements[bigPhotoIdx].alt}
-              // sizes="(max-width: 500px) 100vw"
-            />
-          </Box>
+          <Slider {...settings}>
+            {achievements.map((achieve) => (
+              <Box display="flex" key={achieve.path}>
+                <ImgStyled src={achieve.path} alt={achieve.alt} />
+              </Box>
+            ))}
+          </Slider>
         </Modal>
       )}
     </>

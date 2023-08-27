@@ -1,4 +1,4 @@
-import { CertWrap, CertTitle, CertList, CertItem } from "./Certificates.styled";
+import { CertWrap, CertTitle, CertList, CertItem, ImgStyled } from "./Certificates.styled";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTranslation } from "next-i18next";
@@ -6,6 +6,9 @@ import Modal from "@/components/Modal/Modal";
 import { useState } from "react";
 import { certs } from "@/images";
 import { Box } from "@/components/Box/Box";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const Certificates = ({ lang }) => {
   const { t } = useTranslation("common");
@@ -19,6 +22,17 @@ export const Certificates = ({ lang }) => {
   const onImageClick = (idx) => {
     setBigPhotoIdx(idx);
     toggleModal();
+  };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: bigPhotoIdx,
+    // lazyLoad: 'ondemand',
+    draggable: true,
   };
 
   return (
@@ -44,14 +58,16 @@ export const Certificates = ({ lang }) => {
 
       {showModal && (
         <Modal onClose={toggleModal}>
-          <Box display="flex">
-            {" "}
-            <Image
-              src={certs[bigPhotoIdx].path}
-              alt={certs[bigPhotoIdx].alt}
-              // sizes="(max-width: 500px) 100vw"
-            />
-          </Box>
+          <Slider {...settings}>
+            {certs.map((cert) => (
+              <Box display="flex" key={cert.path}>
+                <ImgStyled
+                  src={cert.path}
+                  alt={cert.alt}
+                />
+              </Box>
+            ))}
+          </Slider>
         </Modal>
       )}
     </>

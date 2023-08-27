@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Section, Title } from "../Base/Base";
+import Image from "next/image";
 
 export const CertWrap = styled(Section)`
   background-color: white;
@@ -36,3 +37,9 @@ export const CertItem = styled.li`
     max-width: 540px;
   }
 `;
+
+export const ImgStyled = styled(Image)`
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+`
