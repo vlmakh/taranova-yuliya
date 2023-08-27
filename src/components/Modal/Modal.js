@@ -1,34 +1,33 @@
-import { useEffect } from 'react';
-import { Overlay, ModalWindow } from './Modal.styled';
-import { createPortal } from 'react-dom';
+import { useEffect } from "react";
+import { Overlay, ModalWindow } from "./Modal.styled";
+// import { createPortal } from 'react-dom';
 
-const modalRoot = document.querySelector('#modal-root');
+// const modalRoot = document.querySelector('#modal-root');
 
 export default function Modal({ onClose, children }) {
   useEffect(() => {
-    window.addEventListener('keydown', handleEscape);
+    window.addEventListener("keydown", handleEscape);
 
     return () => {
-      window.removeEventListener('keydown', handleEscape);
+      window.removeEventListener("keydown", handleEscape);
     };
   });
 
-  const handleEscape = event => {
-    if (event.code === 'Escape') {
+  const handleEscape = (event) => {
+    if (event.code === "Escape") {
       onClose();
     }
   };
 
-  const handleBackdrop = event => {
-    // if (event.currentTarget === event.target) {
-    //   onClose();
-    // }
+  const handleBackdrop = (event) => {
+    if (event.currentTarget === event.target) {
+      onClose();
+    }
   };
 
-  return createPortal(
+  return (
     <Overlay onClick={handleBackdrop}>
       <ModalWindow>{children}</ModalWindow>
-    </Overlay>,
-    modalRoot
+    </Overlay>
   );
 }
