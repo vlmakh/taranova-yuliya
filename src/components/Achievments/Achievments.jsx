@@ -36,7 +36,6 @@ export const Achievments = ({ lang }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: bigPhotoIdx,
-    // lazyLoad: 'ondemand',
     draggable: true,
   };
 

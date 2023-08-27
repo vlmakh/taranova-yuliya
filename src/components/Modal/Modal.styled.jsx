@@ -23,4 +23,9 @@ export const ModalWindow = styled.div`
     overflow-x: visible;
     width: 700px;
   }
+
+  @media (min-width: 1024px) {
+    overflow-x: visible;
+    width: 900px;
+  }
 `;
