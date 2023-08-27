@@ -32,7 +32,7 @@ export const Certificates = ({ lang }) => {
                 <Image
                   src={cert.path}
                   alt={cert.alt}
-                  width={cert.width} height='100%'
+                  width={cert.width}
                   onClick={() => onImageClick(idx)}
                 />
               </AnimationOnScroll>
