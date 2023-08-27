@@ -26,6 +26,8 @@ export const CertList = styled.ul`
 `;
 
 export const CertItem = styled.li`
+  cursor: pointer;
+
   @media (max-width: 480px) {
     max-width: 420px;
   }

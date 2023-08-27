@@ -1,11 +1,11 @@
-import styled from '@emotion/styled';
+import styled from "styled-components";
 
 export const Overlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-    height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,11 +14,16 @@ export const Overlay = styled.div`
 `;
 
 export const ModalWindow = styled.div`
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  width: 500px;
   max-height: calc(100vh - 24px);
   /* overflow-y: clip; */
-  overflow-x: visible;
+  overflow-x: clip;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
