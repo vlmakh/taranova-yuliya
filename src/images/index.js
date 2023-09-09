@@ -3,10 +3,10 @@ import kettle from "./cert-kettle.webp";
 import cycling from "./cert-cycling.webp";
 import firstaid from "./cert-firstaid.webp";
 
-import rundark from "./cert-rundark.webp";
-import marathon23jun from "./cert-marathon-23-jun.webp";
-import jailbreak23 from "./cert-jailbreak-2023.webp";
-import ironman2023 from "./cert-ironman-2023.webp";
+import rundark from "./ach-rundark.webp";
+import marathon23jun from "./ach-marathon-23-jun.webp";
+import jailbreak23 from "./ach-jailbreak-2023.webp";
+import ironman2023 from "./ach-ironman-2023.webp";
 
 export { default as hero } from "./hero.webp";
 export { default as hero480 } from "./hero480.webp";
