@@ -6,6 +6,7 @@ import firstaid from "./cert-firstaid.webp";
 import rundark from "./cert-rundark.webp";
 import marathon23jun from "./cert-marathon-23-jun.webp";
 import jailbreak23 from "./cert-jailbreak-2023.webp";
+import ironman2023 from "./cert-ironman-2023.webp";
 
 export { default as hero } from "./hero.webp";
 export { default as hero480 } from "./hero480.webp";
@@ -21,4 +22,5 @@ export const achievements = [
   { path: rundark, alt: "Run in the dark", width: 300 },
   { path: marathon23jun, alt: "Marathon 2023", width: 400 },
   { path: jailbreak23, alt: "Jailbreak 2023", width: 300 },
+  { path: ironman2023, alt: "Ironman 2023", width: 300 },
 ];
